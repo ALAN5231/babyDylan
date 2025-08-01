@@ -330,18 +330,25 @@
             min-height: 80px;
         }
 
+        
+
+
         .submit-button {
-            background: linear-gradient(135deg, #FFD700, #FFA500);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 10px;
-        }
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 15px; /* ✅ Espacio inferior para separar botones */
+    display: inline-block;
+    text-decoration: none; /* por si es un <a> */
+}
+
 
         .submit-button:hover {
             transform: translateY(-3px);
@@ -622,13 +629,26 @@
                     </select>
                 </div>
                 
+                <!-- Botón para el primer número -->
+                <div style="margin-bottom: 15px;">
                 <a
-                href="https://wa.me/5527081445?text=Hola%20Diana/Diego,%20quiero%20confirmar%20mi%20asistencia%20al%20baby%20shower 💙"
-                target="_blank"
-                class="submit-button"
+                    href="https://wa.me/5527081445?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20al%20baby%20shower%20💙"
+                    target="_blank"
+                    class="submit-button"
                 >
-                <i class="fab fa-whatsapp"></i> Confirmar Asistencia
+                    <i class="fab fa-whatsapp"></i> Confirmar Asistencia (Mamá)
                 </a>
+                </div>
+
+                <div>
+                <a
+                    href="https://wa.me/5519818527?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20al%20baby%20shower%20💙"
+                    target="_blank"
+                    class="submit-button"
+                >
+                    <i class="fab fa-whatsapp"></i> Confirmar Asistencia (Papá)
+                </a>
+                </div>
 
             </form>
         </div>
